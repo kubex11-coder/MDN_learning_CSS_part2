@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>overflowing content</title>
+        <style>
+         .box  {
+        border: 1px solid #333333;
+        width: 200px;
+        height: 100px;
+        }
+        .hidden {
+        overflow: hidden;
+        }
+        .scroll {
+        overflow: scroll;
+        }
+        .scroll-y {
+        overflow-y: scroll;
+        }
+        /*overflow hodnota se dá nastavit na "auto" a scroll funkce se objeví jen pokud text přesahuje, pokud ne tak se neobjeví*/
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Text overflow</h1>
+    </header>
+    <main>
+        <article>
+        <div class="box hidden">This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.</div>
+        <p>This content is outside of the box.</p>
+        <div class="box scroll">This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.</div>
+        <p>This content is outside of the box.</p>
+        <div class="box scroll-y">This box has a height and a width. This means that if there is too much content to be displayed within the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will not be visible.</div>
+        <p>This content is outside of the box.</p>
+        </article>
+    </main>
+    <footer>
+        <p>
+            MDN Documentation <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content">HERE</a>
+        </p>
+    </footer>
+    </body>
+</html>

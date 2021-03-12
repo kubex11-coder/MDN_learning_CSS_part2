@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Styling text</title>
+        <style>
+        html {
+            font-size: 20px;
+            }
+         ul li{
+            padding-left: 1rem;
+            list-style-image: url(images/external-link-52.png);
+            background-size: 1rem;
+            list-style-position: inside;
+        }
+        /*Pro ordered list vytvoření struktury jako "1", "1.1", "1.1.1" atd.. příklad užití v "šablony/wikipedie_static page"*/
+            
+                    
+        </style>
+    </head>
+    <body>
+        <main>
+            <!--atributy start, reversed a value-->
+            <ol start="4">
+                <li>Toast pita, leave to cool, then slice down the edge.</li>
+                <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+                <li>Wash and chop the salad.</li>
+                <li>Fill pita with salad, hummus, and fried halloumi.</li>
+              </ol>
+              <ol start="4" reversed>
+                <li>Toast pita, leave to cool, then slice down the edge.</li>
+                <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+                <li>Wash and chop the salad.</li>
+                <li>Fill pita with salad, hummus, and fried halloumi.</li>
+              </ol>
+              <ol>
+                <li value="2">Toast pita, leave to cool, then slice down the edge.</li>
+                <li value="4">Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
+                <li value="6">Wash and chop the salad.</li>
+                <li value="8">Fill pita with salad, hummus, and fried halloumi.</li>
+              </ol>
+              <!--background image-->
+              <ul>
+                  <li>Unordered list motherfucker</li>
+                  <li>Unordered list motherfucker</li>
+                  <li>Unordered list motherfucker</li>
+                  <li>Unordered list motherfucker</li>
+              </ul>
+
+        </main>
+        <footer>
+            <div class="link">
+                A link to MDN Documentation <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists"> HERE </a>
+            </div>
+        </footer>
+    </body>
+</html>
